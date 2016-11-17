@@ -1,0 +1,15 @@
+{
+	"name": "Material-Design-UI",
+	"title": "Material Design UI",
+	"description": "Brackets UI designed with material design colors, focused on SASS/CSS development.",
+	"version": "1.0.0",
+	"homepage": "https://github.com/yourname/my-shiny-theme",
+	"author": "Alicia Silhavy (asilhavy.com)",
+	"license": "MIT",
+	"theme": {
+		"file": "theme.less",
+		"dark": true,
+		"addModeClass": true
+	},
+	"keywords": ["theme", "material", "design", "neon"]
+}

@@ -1,0 +1,152 @@
+// ----------- COLORS ----------
+//
+// --- NEUTRALS ---
+@light-gray: #ededed;
+@gray: #34495e;
+@dark-gray: #3c3c3c;
+@coal-gray: #85a1af;
+@background: #080808;
+@highlight: rgba(225, 243, 255, 0.2);
+//
+// --- BLUES ---
+@light-blue: #e1f3ff;
+@blue: #1191e6;
+@dark-blue: #085a90;
+//
+// --- REDS ---
+@light-red: #ff7f46;
+@red: #e74c3c;
+@dark-red: #af2516;
+//
+//--- GREENS ---
+@light-green: #95ffc2;
+@green: #2ecc71;
+@dark-green: #088b3f;
+//
+// --- PINK/PURPLES ---
+@light-purple: #dba3f2;
+@purple: #7E57C2;
+@dark-purple: #2e0a3e;
+//
+// --- YELLOW ---
+@yellow: #f9c025;
+
+/*
+
+
+*/
+
+// Background: color is for {}(),:; etc text
+.CodeMirror,
+.CodeMirror-scroll {
+	background: #000;
+	color: #fff;
+}
+// Comments
+.cm-comment {
+	color: @gray;
+}
+// Active line background
+.CodeMirror-focused .CodeMirror-activeline-background {
+	background-color: @highlight;
+}
+// Left side gutter
+.CodeMirror-focused .CodeMirror-activeline,
+.CodeMirror-gutters,
+.CodeMirror-scroll {
+	background-color: #000;
+	// Left side gutter number and background (color is number)
+	.CodeMirror-gutter-elt {
+		background-color: #000;
+		color: @gray;
+	}
+}
+// Vanilla values in styling and JS (including null)????
+.cm-atom {
+	color: @dark-blue;
+}
+// Attribute values in HTML
+.cm-string {
+	color: @coal-gray;
+}
+// Attribute name in HTML
+.cm-attribute {
+	color: @dark-blue;
+}
+// Numerical values for things
+.cm-number {
+	color: @light-red;
+}
+// CSS properties
+.cm-property {
+	color: @green;
+}
+// Javascript assignment operator
+.cm-operator {
+	color: @light-green;
+}
+// JQuery $ and selector of $(selector) 
+.cm-variable {
+	color: @blue;
+}
+// :sudoElement in styling
+.cm-variable-3 {
+	color: @light-red;
+}
+.cm-variable-2 {
+	color: @blue;
+}
+// CSS class selectors
+.cm-qualifier {
+	color: @purple;
+}
+// HTML tags and CSS tag selectors
+.cm-tag {
+	color: @purple;
+}
+// CSS ID selectors
+.cm-builtin {
+	color: @purple;
+}
+// !IMPORTANT in CSS, var, function, if/then/else, this, etc in JS
+.cm-keyword {
+	color: @yellow;
+}
+// Search highlight
+.CodeMirror-searching {
+	// Active highlight
+	&.searching-current-match {}
+}
+// Cursor
+.CodeMirror-cursor {
+	border-left: 1px solid @green !important;
+}
+// Line number
+.CodeMirror-linenumber {
+	color: @gray;
+}
+// Selected text
+.CodeMirror-focused .CodeMirror-selected {
+	background-color: @highlight;
+}
+// Matching brackets and tags
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
+	color: white !IMPORTANT;
+	background-color: @gray;
+	border-bottom: 2px solid @green;
+}
+// Open/Collapse Tabs
+.CodeMirror-foldgutter-open:after {
+	color: white;
+}
+.CodeMirror-foldgutter-folded:after {
+	color: @red;
+}
+// ... for collapsed lines
+.CodeMirror-foldmarker {
+	background-color: @dark-blue;
+	border-color: transparent;
+	border-radius: 5px;
+	color: white;
+}
